@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박현준 자기소개 홈페이지</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="js/todo.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <input type="checkbox" id="menu-toggler">
+      <label for="menu-toggler" id="hamburger-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </label>
+      <ul class="all-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Who is me</a></li>
+        <li><a href="#contact">Tell Me</a></li>
+      </ul>
+      <div class="bar-bg">
+        <span class="bar-ing"></span>
+      </div>
+    </nav>
+  </header>
+
+  <figure class="homepage" id="home">
+    <div class="content">
+      <div class="text">
+        <h2>저를 소개합니다!</h2>
+        <p>제 이름은 박현준입니다.</p>
+      </div>
+      <h1 id="smart">Park Hyun Jun</h1>
+    </div>
+  </figure>
+
+  <section class="services" id="services">
+    <h2>저는 '이런' 사람입니다.</h2>
+    <ul class="cards">
+      <li class="card">
+        <a href="self.html" class="image-featured"><img src="img/hyunjun_photo1.jpg" alt="박현준 얼굴 사진"></a>
+        <h3>기본 정보</h3>
+      </li>
+      <li class="card">
+        <a href="favorite.html" class="image-featured"><img src="img/hyunjun_camera.jpg" alt="취미 사진"></a>
+        <h3>취미</h3>
+      </li>
+      <li class="card">
+        <a href="goal.html" class="image-featured"><img src="img/hyunjun_photo2.jpg" alt="현준 사진"></a>
+        <h3>목표</h3>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Tell Me</h2>
+    <p>여러분의 방명록을 남겨주세요!</p>
+    <div class="row">
+      <div class="container">
+        <input type="text" class="todo-name-input" placeholder="작성자 이름" required>
+        <input type="text" class="todo-input" placeholder="방명록 내용" required>
+        <div class="todos-container"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <span>Made by 박현준</span><br>
+      <span>Email: pdhjsy64@naver.com</span><br>
+    </div>
+  </footer>
+
+  <script src="scroll.js"></script>
+</body>
+
+</html>
